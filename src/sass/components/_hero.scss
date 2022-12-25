@@ -1,0 +1,483 @@
+.hero {
+
+    background-color: var(--primary-bg);
+    height: 453px;
+
+
+    @media screen and (min-width: $tablet) {
+
+        height: 374px;
+    }
+
+    @media screen and (min-width: $desktop) {
+
+        height: 591px;
+    }
+}
+
+.hero_container {
+    position: relative;
+    }
+
+
+
+// Left side
+.hero_title {
+
+
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.27;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: var(--secondary-bg);
+   
+    margin-top: 50px;
+
+    @media screen and (min-width: $tablet) {
+        width: 247px;
+        margin-top: 14px;
+        margin-bottom: 24px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 38px;
+        line-height: 1.26;
+
+        width: 367px;
+        margin-top: 48px;
+        margin-bottom: 28px;
+    }
+}
+
+// Button
+
+.hero_list--buttons {
+    display: flex;
+    align-items: center;
+}
+
+.hero_button--product {
+
+    display: block;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    text-align: center;
+
+    color: var(--secondary-bg);
+
+    
+    border-radius: 22px;
+    background-color: var(--accent);
+    padding: 11px 26px;
+    margin-right: 12px;
+    cursor: pointer;
+
+    transition: $trns-brd;
+
+
+    &:hover {
+        background-color: var(--second-prod-bg);
+    }
+
+    &:focus {
+        background-color: var(--second-prod-bg);
+        color: var(--secondary-bg);
+    }
+
+
+
+
+    &:disabled {
+        border-color: var(--btn-bg-disabled);
+
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 14px;
+        line-height: 1.29;
+
+        padding: 12px 34px;
+        margin-right: 34px;
+    }
+}
+
+
+
+.hero_button--made {
+
+    top: 106%;
+    left: 45%;
+    display: block;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    text-align: center;
+    
+
+    border-radius: 22px;
+    background-color: var(--accent);
+    padding: 11px 15px;
+    margin-right: 12px;
+    cursor: pointer;
+    color: var(--primary-text);
+
+    transition: $trns-brd;
+
+    &:hover {
+        background-color: var(--second-prod-bg);
+        color: var(--secondary-bg);
+    }
+
+    &:focus {
+        background-color: var(--second-prod-bg);
+        color: var(--secondary-bg);
+    }
+
+    &:disabled {
+        color: var(--btn-bg-disabled);
+
+    }
+
+    @media screen and (min-width: $tablet) {
+        top: 41%;
+        left: 21%;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 14px;
+        line-height: 1.21;
+        left: 15%;
+        top: 52%;
+
+    }
+}
+
+// Sides
+
+.hero_sides {
+    display: flex;
+    justify-content: space-between;
+    
+
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 16px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 42px;
+    }
+}
+
+
+// Right side
+.hero_right-side {
+
+    @media screen and (max-width: 767px) {
+        display: none;
+        
+    }
+
+}
+
+.hero_list-quantities {
+    position: relative;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 1.21;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: var(--primary-text);
+
+    margin-bottom: 4px;
+
+    &:not(:last-child) {
+        margin-top: 28px;
+    }
+
+
+    &:hover,
+    &:focus {
+    font-size: 31px;
+    color: var(--accent);
+    text-shadow: 1px 1px 1px black, 0 0 1em;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 46px;
+        line-height: 1.22;
+
+        &:not(:last-child) {
+            margin-top: 56px;
+        }
+
+        &:hover,
+        &:focus {
+        font-size: 50px;
+        color: var(--accent);  
+        text-shadow: 1px 1px 1px black, 0 0 1em ;
+        }
+    }
+
+
+
+
+    
+}
+
+
+
+.hero_list-text {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+
+    text-align: right;
+
+    color: var(--secondary-text);
+
+    @media screen and (min-width: $desktop) {
+        font-size: 14px;
+        line-height: 1.21;
+    }
+}
+
+.hero_list-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+
+// Bottom side
+
+.hero_bottom-side {
+    
+    display: flex;
+
+  
+}
+
+.hero_bottom-side--left {
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.hero_text {
+    width: 139px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.42;
+    letter-spacing: 0.04;
+
+    color: var(--primary-text);
+
+    @media screen and (min-width: $desktop) {
+        width: 210px;
+        margin-bottom: 24px;
+
+        font-size: 14px;
+        line-height: 1.43;
+        text-align: justify;
+    }
+}
+
+.hero_link {
+    cursor: pointer;
+
+}
+
+.hero_arrow {
+    fill: var(--primary-text);
+}
+
+
+
+// Images
+
+.hero_image-icecream {
+
+    position: absolute;
+    top: 105%;
+    left: 30%;
+    z-index: 1;
+
+
+    animation-name: Appearance;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(.1, -.6, .2, 0);
+
+
+    @-webkit-keyframes Appearance {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @-o-keyframes Appearance {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @-moz-keyframes Appearance {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes Appearance {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @media screen and (min-width: $tablet) {
+        top: 5%;
+        left: 52%;
+    }
+
+    @media screen and (min-width: $desktop) {
+        top: 5%;
+        left: 52%;
+
+    }
+}
+
+.hero_middle-side::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 81px;
+    top: 0;
+    left: 55%;
+    transform: translateX(-48%);
+    background-color: #ffa5ba;
+    border-radius: 50%;
+    z-index: 0;
+    opacity: 0.7;
+    animation-name: pink-circle;
+    animation-duration: 2500ms, 2500ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 10;
+    animation-direction: alternate;
+    animation-delay: 0.5s;
+
+    @keyframes pink-circle {
+        0% {
+            background-image: radial-gradient(circle at center,
+                    #e03f5b,
+                    #e03f5b,
+                    #fb5277,
+                    #fb5277,
+                    #ffa5ba,
+                    #ffa5ba,
+                    #ffa5ba );
+        }
+
+        25% {
+            background-image: radial-gradient(circle at center,
+                    #e03f5b,
+                    #fb5277,
+                    #fb5277,
+                    #fb5277,
+                    #ffa5ba,
+                    #ffa5ba,
+                    #ffa5ba );
+        }
+
+        50% {
+            background-image: radial-gradient(circle at center,
+                    #fb5277,
+                    #fb5277,
+                    #fb5277,
+                    #ffa5ba,
+                    #ffa5ba,
+                    #ffa5ba,
+                    #ffa5ba );
+            border-radius: 45%;
+        }
+
+        75% {
+            background-image: radial-gradient(circle at center,
+                    #fb5277,
+                    #fb5277,
+                    #ffa5ba,
+                    #ffa5ba,
+                    #ffa5ba,
+                    #ffa5ba,
+                    #ffa5ba );
+        }
+
+        100% {
+            background-image: radial-gradient(circle at center,
+                    #fb5277,
+                    #ffa5ba,
+                    #ffa5ba,
+                    #ffa5ba,
+                    #ffa5ba,
+                    #ffa5ba,
+                    #ffa5ba );
+        }
+    }
+
+    @media screen and (min-width: $mobile) {
+        width: 210px;
+        height: 210px;
+        top: 105%;
+        left: 50%;
+
+        
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: 324px;
+        height: 324px;
+
+        top: 5%;
+        left: 65%;
+
+        
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 518px;
+        height: 518px;
+        top: 5%;
+        left: 60%;
+        transform: translateX(-35%);
+    }
+}
+
+
+
+.hero_image-plate {
+
+    margin-right: 16px;
+
+}
