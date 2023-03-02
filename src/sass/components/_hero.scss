@@ -307,8 +307,8 @@
 .hero_image-icecream {
 
     position: absolute;
-    top: 105%;
-    left: 30%;
+    top: 109%;
+    left: 20%;
     z-index: 1;
 
 
@@ -358,13 +358,13 @@
     }
 
     @media screen and (min-width: $tablet) {
-        top: 5%;
-        left: 52%;
+        top: 12.3%;
+        left: 47%;
     }
 
     @media screen and (min-width: $desktop) {
-        top: 5%;
-        left: 52%;
+        top: 5.5%;
+        left: 45%;
 
     }
 }
